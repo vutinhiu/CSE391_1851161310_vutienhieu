@@ -1,0 +1,22 @@
+  
+body{
+    background: linear-gradient(to right, #e1eec3, #f05053);
+}
+.container{
+    display: flex;
+}
+.left{
+    width: 50%;
+    margin-left: 50px;
+}
+.right{
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 30px 30px;
+    text-align: center;
+    font-family: arial;
+    background-color:whitesmoke ;
+}
+img{
+    width: 100%;
+}
