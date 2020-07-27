@@ -1,0 +1,416 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:05.529 --> 00:00:08.980
+Hi there!
+In this video, we will teach you how to add
+
+00:00:08.980 --> 00:00:15.330
+CSS to HTML code. But before we get to that,
+let’s talk about the general structure of
+
+00:00:15.330 --> 00:00:24.260
+CSS. It consists of several elements. Elements
+that indicate WHAT to change are called CSS
+
+00:00:24.260 --> 00:00:31.629
+properties. Each CSS property can have several
+values. For example, to change the text color
+
+00:00:31.629 --> 00:00:36.940
+you need to use the color property. Please
+note that you need to use the American spelling
+
+00:00:36.940 --> 00:00:43.289
+of “color”; the British one won’t work.
+In the function of the value, we specify the
+
+00:00:43.289 --> 00:00:51.079
+color. For example: blue, red, green, or yellow.
+In CSS, there are more than 100 different
+
+00:00:51.079 --> 00:00:56.140
+colors. We’ll talk about the ways to set
+the color in a separate video lesson.
+
+00:00:56.140 --> 00:01:02.710
+There’s another property called font-family.
+Please note, that these two words need to
+
+00:01:02.710 --> 00:01:10.990
+be written with a hyphen. This property specifies
+the font for a text. For the value we’ll
+
+00:01:10.990 --> 00:01:17.351
+specify a font name, for example, Arial or
+“Times New Roman” or something else. If
+
+00:01:17.351 --> 00:01:22.590
+a font name, like “Times New Roman,” consists
+of several words, it has to be written in
+
+00:01:22.590 --> 00:01:28.539
+quotes. If it consists of one word, quotes
+are optional. We’ll talk about fonts in
+
+00:01:28.539 --> 00:01:32.150
+a separate video.
+Now let’s learn how to add these properties
+
+00:01:32.150 --> 00:01:38.070
+to HTML. There are three ways to do this.
+Let’s talk about each of them in turn.
+
+00:01:38.070 --> 00:01:43.700
+The first way is to write CSS directly in
+the tag you want to change. You can do this
+
+00:01:43.700 --> 00:01:49.850
+with the style attribute. Then we add properties
+and corresponding values using the following
+
+00:01:49.850 --> 00:01:56.149
+form: “property, colon, then the value,
+then a semicolon, then the next property,
+
+00:01:56.149 --> 00:02:04.520
+colon, value, semicolon” and so on. This
+method is also called the “inline method.”
+
+00:02:04.520 --> 00:02:10.149
+For example, in HTML we have 2 &lt;p&gt; tags. On
+the screen, you see how these &lt;p&gt; tags are
+
+00:02:10.149 --> 00:02:16.590
+displayed. Say we want to change the color
+of both paragraphs from black to blue. To
+
+00:02:16.590 --> 00:02:25.260
+do this, we need to add style attribute. Therefore,
+we write “style”, equal sign and then
+
+00:02:25.260 --> 00:02:33.370
+in quotes color, colon, blue and after that
+semicolon.
+
+00:02:33.370 --> 00:02:38.890
+So as you see, we’ve written style attribute
+and then its value, by writing “color:blue”
+
+00:02:38.890 --> 00:02:45.610
+Now, let’s try to do it in practice. Let’s
+create a &lt;p&gt; tag in the body with the text
+
+00:02:45.610 --> 00:03:01.020
+“All your dreams can come true.” Refresh
+the page. And we see how it is displayed on
+
+00:03:01.020 --> 00:03:07.930
+the web page. Now let’s make the paragraph
+blue. To do this, let’s write style, equal
+
+00:03:07.930 --> 00:03:16.170
+sign and then in quotes“color:blue” and
+ending with the semicolon. And let’s set
+
+00:03:16.170 --> 00:03:25.709
+for our paragraph the font-family Arial. As
+you can see, our paragraph is blue and in
+
+00:03:25.709 --> 00:03:32.001
+Arial. Again, let’s have a look. First,
+we set the property color. Then colon, then
+
+00:03:32.001 --> 00:03:39.959
+the value of this property: blue. Then semicolon.
+And then the next property font-family, colon,
+
+00:03:39.959 --> 00:03:46.790
+and the value of this property Arial. And
+then again at the end, we have to set a semicolon.
+
+00:03:46.790 --> 00:03:52.189
+If we had one more property, we would write
+this property here.
+
+00:03:52.189 --> 00:04:07.209
+Now let’s add another &lt;p&gt; tag. For example,
+with the text “just do it.” As you see,
+
+00:04:07.209 --> 00:04:12.069
+the paragraph is in black and in the default
+font. And if we want to make this paragraph
+
+00:04:12.069 --> 00:04:22.230
+blue and in Arial, we have to copy the whole
+style attribute and paste it here. If we have
+
+00:04:22.230 --> 00:04:28.220
+two or three &lt;p&gt; tags, this is more or less
+okay. But if I had 10 &lt;p&gt; tags, it wouldn’t
+
+00:04:28.220 --> 00:04:33.800
+be okay. Because if we needed to change the
+color of all the &lt;p&gt; tags from blue to another
+
+00:04:33.800 --> 00:04:38.911
+color, it wouldn’t be convenient, because
+we would have to change each &lt;p&gt; tag, one
+
+00:04:38.911 --> 00:04:43.060
+at a time.
+So that’s why a second way of connecting
+
+00:04:43.060 --> 00:04:49.610
+CSS was created. In the first way, we added
+attribute style. In the second, we just add
+
+00:04:49.610 --> 00:05:00.440
+a &lt;style&gt; tag. The &lt;style&gt; tag has to be written
+in the &lt;head&gt; tag. It’s very, very important.
+
+00:05:00.440 --> 00:05:05.160
+As you see, I have written in the &lt;style&gt;
+tag &lt;p&gt;, and then a pair of curly brackets
+
+00:05:05.160 --> 00:05:11.949
+(as you see, the opening curly bracket and
+the closing one). And then we write color,
+
+00:05:11.949 --> 00:05:18.100
+colon, blue, semicolon.
+Okay, let’s have a closer look at our &lt;style&gt;
+
+00:05:18.100 --> 00:05:24.540
+tag. So in our &lt;style&gt; tag, I wrote p and
+then a pair of curly brackets and the font-family,
+
+00:05:24.540 --> 00:05:33.000
+colon, Arial, semicolon, and then color, colon,
+yellow, semicolon. The p tag is called a selector,
+
+00:05:33.000 --> 00:05:41.300
+because, among all the tags available, we’re
+only selecting the p tags. And here, for example,
+
+00:05:41.300 --> 00:05:49.650
+color is a property and yellow is a value.
+And font-family is also a property and Arial
+
+00:05:49.650 --> 00:05:54.960
+is a value. Let’s take a look how it works
+in practice.
+
+00:05:54.960 --> 00:06:04.949
+We have to write the &lt;style&gt; tag inside of
+the &lt;head&gt; tag. In the &lt;style&gt; tag, we write
+
+00:06:04.949 --> 00:06:14.310
+p, then curly brackets, and then we simply
+need to copy what we did in the previous method.
+
+00:06:14.310 --> 00:06:20.260
+And we paste it here. We can leave it as it
+is or we can write each property on a separate
+
+00:06:20.260 --> 00:06:25.020
+line.
+I highly recommend writing each property on
+
+00:06:25.020 --> 00:06:31.180
+a separate line, because if we write it this
+way, then it’s much easier to read the code.
+
+00:06:31.180 --> 00:06:36.780
+And as you see, each property starts already
+tabbed. I highly recommend applying the same
+
+00:06:36.780 --> 00:06:43.290
+approach. Now we can delete the &lt;p&gt; tags that
+we don’t need. And for the &lt;p&gt; tags that
+
+00:06:43.290 --> 00:06:58.849
+we do need, we can delete style attribute.
+Now let’s see if something changes on our
+
+00:06:58.849 --> 00:07:06.139
+web page. As you can see, nothing has changed.
+So everything works as it worked in the first
+
+00:07:06.139 --> 00:07:12.319
+way of CSS connecting. No matter how many
+&lt;p&gt; tags we add, each &lt;p&gt; tag will be blue
+
+00:07:12.319 --> 00:07:17.280
+and in Arial.
+So, great. This way is much more convenient
+
+00:07:17.280 --> 00:07:24.180
+than the last one. However, this isn’t even
+the best option, since this way only works
+
+00:07:24.180 --> 00:07:30.540
+for the page that contains the &lt;style&gt; tag.
+But then websites typically contain several
+
+00:07:30.540 --> 00:07:39.660
+pages. For example, index.html and contact-us.html.
+To specify the same style for the &lt;p&gt; tags
+
+00:07:39.660 --> 00:07:45.400
+for every page, we would have to copy the
+whole &lt;p&gt; tag with its content and insert
+
+00:07:45.400 --> 00:07:52.509
+it into each HTML page. And if we wanted to
+change the text color in the &lt;p&gt; tag, we would
+
+00:07:52.509 --> 00:07:59.800
+have to go into every HTML document and change
+the color. That would be very inconvenient.
+
+00:07:59.800 --> 00:08:06.389
+That’s why there’s a third method which
+allows us to add CSS with the help of a separate
+
+00:08:06.389 --> 00:08:13.900
+file. Basically, you create a separate folder
+called css. And then in this folder you create
+
+00:08:13.900 --> 00:08:22.770
+a file called style with a css extension.
+Then you connect this file to each HTML page.
+
+00:08:22.770 --> 00:08:27.949
+As a result, you only need to write the style
+once in a separate file, and then it works
+
+00:08:27.949 --> 00:08:36.560
+for every tag that it’s specified to affect.
+The style file gets connected to the same
+
+00:08:36.560 --> 00:08:41.690
+&lt;head&gt; tag, but in this situation, it’s
+done with the help of a &lt;link&gt; tag with two
+
+00:08:41.690 --> 00:08:47.710
+mandatory attributes: 1) rel with the value
+stylesheet - to indicate that we’re connecting
+
+00:08:47.710 --> 00:08:55.190
+styles and 2) the attribute href to specify
+the file which we’re connecting to. In our
+
+00:08:55.190 --> 00:09:07.140
+example, href will be the following: css/style.css.
+In our CSS file, we’ll have a p tag, curly
+
+00:09:07.140 --> 00:09:14.670
+brackets, and then color: blue.
+Let’s see how it works in practice. First,
+
+00:09:14.670 --> 00:09:30.250
+let’s copy the file index.html and rename
+it to contact-us.html.
+
+00:09:30.250 --> 00:09:36.610
+Now let’s create the folder “CSS,” in
+which we will create the file style.css. So
+
+00:09:36.610 --> 00:09:42.630
+let’s go to Sublime and create a new file.
+Let’s save it to the “CSS” folder with
+
+00:09:42.630 --> 00:09:53.110
+the name “style.css” Now you see that
+our file “style.css” is open. Now we will
+
+00:09:53.110 --> 00:09:59.160
+add the content we wrote before in the &lt;style&gt;
+tag. Make sure that you don’t include the
+
+00:09:59.160 --> 00:10:04.070
+&lt;style&gt; tag, only the content in the &lt;style&gt;
+tag.
+
+00:10:04.070 --> 00:10:11.040
+Now we can delete the &lt;style&gt; tag. Let’s
+connect the style.css file to our index.html
+
+00:10:11.040 --> 00:10:17.810
+file. To do this, we write a &lt;link&gt; tag and
+two necessary attributes: rel with the value
+
+00:10:17.810 --> 00:10:29.840
+“stylesheet” and then href attribute where
+we write the path to our file. And that is
+
+00:10:29.840 --> 00:10:37.000
+css/style.css. Congratulations, we’ve connected
+the two files.
+
+00:10:37.000 --> 00:10:51.400
+Now let’s open the file “contact-us.”
+Here we will also delete the &lt;style&gt; tag.
+
+00:10:51.400 --> 00:11:02.320
+And we will change this content to, for example,
+&lt;h1&gt; with the text “Contact Us.” And here
+
+00:11:02.320 --> 00:11:23.511
+we also connect the CSS file to this page.
+Okay, done. Refresh our index.html page. And
+
+00:11:23.511 --> 00:11:31.600
+we see that everything works.
+Now let’s open the contact-us html file.
+
+00:11:31.600 --> 00:11:38.880
+And we see that the text “Contact Us”
+is bold and in black. Why? Because right now,
+
+00:11:38.880 --> 00:11:47.480
+we have styles only for p tags. So if we also
+want a color to h1, what do we need to do?
+
+00:11:47.480 --> 00:11:55.690
+We have to write in the style.css file “h1”
+(and that means we are selecting all h1’s),
+
+00:11:55.690 --> 00:12:04.920
+then curly brackets, then color, for example,
+red. Save it. And refresh the page. As you
+
+00:12:04.920 --> 00:12:11.860
+see, h1 is red, while all the paragraphs are
+blue. So everything works.
+
+00:12:11.860 --> 00:12:18.500
+To sum things up, if you want to give styles
+to one tag, you should use the style attribute.
+
+00:12:18.500 --> 00:12:23.750
+If you want to give styles to a page, you
+should use the &lt;style&gt; tag. And if you want
+
+00:12:23.750 --> 00:12:30.600
+to give styles to many pages, not just one,
+you have to create a separate style.css file
+
+00:12:30.600 --> 00:12:37.310
+with all the styles in it and then connect
+it to the HTML files with the help of a &lt;link&gt;
+
+00:12:37.310 --> 00:12:43.730
+tag. It’s best to use the third way, since
+it allows us to set styles for separate tags,
+
+00:12:43.730 --> 00:12:48.600
+one page, or many pages and therefore it covers
+everything we need.
+
+00:12:48.600 --> 00:12:52.180
+So that’s all for this lesson. See you in
+the next one.
+
